@@ -13,7 +13,7 @@ content = st.text_input('국악가요의 주제를 제시해주세요.')
 # print(result)
 
 if st.button('작사 요청하기'):
-   with st.spiner('가사 생각중...'):
+   with st.spinner('가사 생각중...'):
       result = chat_model.predict(content + '에대한 국악가사를 써줘')
       st.write(result) 
 
