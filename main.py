@@ -7,7 +7,7 @@ chat_model = ChatOpenAI()
 
 st.title('인공지능 작사가(국악전문)')
 
-content = st.text_input('국악가요의 주제를 제시해주세요.')
+content = st.text_input('국악가요의 주제 한단어를 제시해주세요.')
 
 # result = chat_model.predict(content + "국악가사를 써줘")
 # print(result)
